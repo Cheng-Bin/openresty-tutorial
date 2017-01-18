@@ -10212,3 +10212,200 @@ coroutine 0:
 2017/01/17 10:34:56 [alert] 5300#0: *100 setsockopt(TCP_NODELAY) failed (22: Invalid argument) while keepalive, client: 127.0.0.1, server: 0.0.0.0:8080
 2017/01/17 10:36:24 [alert] 5300#0: *101 setsockopt(TCP_NODELAY) failed (22: Invalid argument) while keepalive, client: 127.0.0.1, server: 0.0.0.0:8080
 2017/01/17 10:36:24 [error] 5300#0: *102 open() "/usr/local/openresty/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:8080", referrer: "http://127.0.0.1:8080/ffi_called"
+2017/01/18 08:56:59 [error] 5300#0: *112 open() "/usr/local/openresty/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2017/01/18 10:43:40 [error] 5300#0: *117 open() "/usr/local/openresty/nginx/html/request_header.lua" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header.lua HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:43:42 [error] 5300#0: *118 open() "/usr/local/openresty/nginx/html/request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:43:54 [alert] 9051#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:43:54 [notice] 9051#0: signal process started
+2017/01/18 10:43:54 [alert] 5299#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:43:56 [error] 9053#0: *119 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:43:57 [error] 9053#0: *120 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:44:03 [alert] 9085#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:44:03 [notice] 9085#0: signal process started
+2017/01/18 10:44:07 [alert] 9097#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:44:09 [error] 9099#0: *1 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:44:37 [error] 9099#0: *2 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:44:48 [error] 9099#0: *3 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "POST /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:45:18 [error] 9099#0: *4 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:45:20 [error] 9099#0: *5 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:45:28 [error] 9099#0: *6 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:45:28 [error] 9099#0: *6 open() "/usr/local/openresty/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:8080", referrer: "http://127.0.0.1:8080/request_header"
+2017/01/18 10:45:48 [error] 9099#0: *12 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:45:49 [error] 9099#0: *13 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:45:55 [error] 9099#0: *14 failed to load external Lua file "/usr/local/openresty/nginx/request_header.lua": cannot open /usr/local/openresty/nginx/request_header.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:46:05 [alert] 9308#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:46:05 [notice] 9308#0: signal process started
+2017/01/18 10:46:05 [alert] 9098#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:51:37 [error] 9310#0: *19 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:51:41 [alert] 9666#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:51:41 [notice] 9666#0: signal process started
+2017/01/18 10:51:41 [alert] 9098#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:51:45 [error] 9667#0: *20 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:51:48 [error] 9667#0: *21 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:52:59 [alert] 9757#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:52:59 [notice] 9757#0: signal process started
+2017/01/18 10:52:59 [alert] 9098#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:53:01 [error] 9758#0: *22 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:53:03 [error] 9758#0: *23 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:53:22 [error] 9758#0: *24 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:53:28 [error] 9758#0: *25 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:53:32 [error] 9758#0: *26 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:54:38 [alert] 9888#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:54:38 [notice] 9888#0: signal process started
+2017/01/18 10:54:38 [alert] 9098#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:54:40 [error] 9889#0: *27 failed to load external Lua file "/usr/local/openresty/nginx/lua/request_header.lua": /usr/local/openresty/nginx/lua/request_header.lua:25: unexpected symbol near '#', client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:54:45 [alert] 9910#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:54:45 [notice] 9910#0: signal process started
+2017/01/18 10:54:51 [alert] 9933#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 10:54:53 [error] 9935#0: *1 failed to load external Lua file "/usr/local/openresty/nginx/lua/request_header.lua": /usr/local/openresty/nginx/lua/request_header.lua:25: unexpected symbol near '#', client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:54:54 [error] 9935#0: *2 failed to load external Lua file "/usr/local/openresty/nginx/lua/request_header.lua": /usr/local/openresty/nginx/lua/request_header.lua:25: unexpected symbol near '#', client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:54:58 [error] 9935#0: *3 failed to load external Lua file "/usr/local/openresty/nginx/lua/request_header.lua": /usr/local/openresty/nginx/lua/request_header.lua:25: unexpected symbol near '#', client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 10:56:41 [error] 9935#0: *4 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:56:44 [error] 9935#0: *5 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:57:05 [error] 9935#0: *6 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:57:06 [error] 9935#0: *7 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 10:57:41 [error] 9935#0: *10 open() "/usr/local/openresty/nginx/htmlsub_request_header" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /request_header HTTP/1.1", subrequest: "sub_request_header", host: "127.0.0.1:8080"
+2017/01/18 11:16:35 [alert] 10775#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 11:16:35 [notice] 10775#0: signal process started
+2017/01/18 11:16:39 [alert] 10786#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 11:23:21 [error] 10788#0: *11 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/response_header.lua:9: bad argument #1 to 'say' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	/usr/local/openresty/nginx/lua/response_header.lua:9: in function </usr/local/openresty/nginx/lua/response_header.lua:1>, client: 127.0.0.1, server: , request: "HEAD /response_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:23:26 [error] 10788#0: *12 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/response_header.lua:9: bad argument #1 to 'say' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	/usr/local/openresty/nginx/lua/response_header.lua:9: in function </usr/local/openresty/nginx/lua/response_header.lua:1>, client: 127.0.0.1, server: , request: "GET /response_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:23:36 [error] 10788#0: *13 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/response_header.lua:6: bad argument #1 to 'say' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	/usr/local/openresty/nginx/lua/response_header.lua:6: in function </usr/local/openresty/nginx/lua/response_header.lua:1>, client: 127.0.0.1, server: , request: "GET /response_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:24:41 [error] 10788#0: *14 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/response_header.lua:5: bad argument #1 to 'say' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	/usr/local/openresty/nginx/lua/response_header.lua:5: in function </usr/local/openresty/nginx/lua/response_header.lua:1>, client: 127.0.0.1, server: , request: "GET /response_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:24:52 [alert] 11284#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 11:24:52 [notice] 11284#0: signal process started
+2017/01/18 11:24:55 [alert] 11296#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 11:24:56 [alert] 11309#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 11:24:56 [emerg] 11309#0: bind() to 0.0.0.0:8080 failed (48: Address already in use)
+2017/01/18 11:24:56 [emerg] 11309#0: bind() to 0.0.0.0:8080 failed (48: Address already in use)
+2017/01/18 11:24:56 [emerg] 11309#0: bind() to 0.0.0.0:8080 failed (48: Address already in use)
+2017/01/18 11:24:56 [emerg] 11309#0: bind() to 0.0.0.0:8080 failed (48: Address already in use)
+2017/01/18 11:25:00 [alert] 11320#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 11:25:00 [notice] 11320#0: signal process started
+2017/01/18 11:25:02 [alert] 11332#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 11:25:06 [error] 11334#0: *1 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/response_header.lua:5: bad argument #1 to 'say' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	/usr/local/openresty/nginx/lua/response_header.lua:5: in function </usr/local/openresty/nginx/lua/response_header.lua:1>, client: 127.0.0.1, server: , request: "GET /response_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:25:08 [error] 11334#0: *2 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/response_header.lua:5: bad argument #1 to 'say' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	/usr/local/openresty/nginx/lua/response_header.lua:5: in function </usr/local/openresty/nginx/lua/response_header.lua:1>, client: 127.0.0.1, server: , request: "GET /response_header HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:29:19 [alert] 11625#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 11:29:19 [notice] 11625#0: signal process started
+2017/01/18 11:29:21 [alert] 11636#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:17
+2017/01/18 11:29:33 [error] 11638#0: *1 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:14: bad argument #1 to 'decode' (string expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:14: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:29:59 [error] 11638#0: *2 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:14: bad argument #1 to 'decode' (string expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:14: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:30:01 [error] 11638#0: *3 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:14: bad argument #1 to 'decode' (string expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:14: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:34:43 [error] 11638#0: *6 failed to load external Lua file "/usr/local/openresty/nginx/lua/json_parse.lua": /usr/local/openresty/nginx/lua/json_parse.lua:25: '<name>' expected near '{', client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:34:55 [error] 11638#0: *7 failed to load external Lua file "/usr/local/openresty/nginx/lua/json_parse.lua": /usr/local/openresty/nginx/lua/json_parse.lua:25: '<name>' expected near '{', client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:35:13 [error] 11638#0: *8 failed to load external Lua file "/usr/local/openresty/nginx/lua/json_parse.lua": /usr/local/openresty/nginx/lua/json_parse.lua:25: '<name>' expected near '"6666"', client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:38:25 [error] 11638#0: *12 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:33: attempt to call global 'json_encode_sparse_array' (a nil value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/nginx/lua/json_parse.lua: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:40:28 [error] 11638#0: *14 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected object key string but found invalid token at character 2
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:40:29 [error] 11638#0: *15 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected object key string but found invalid token at character 2
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:40:51 [error] 11638#0: *16 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected object key string but found invalid token at character 2
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:41:38 [error] 11638#0: *17 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected object key string but found invalid token at character 2
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:41:41 [error] 11638#0: *18 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected object key string but found invalid token at character 2
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:41:43 [error] 11638#0: *19 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected object key string but found invalid token at character 2
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "HEAD /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:41:46 [error] 11638#0: *20 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected object key string but found invalid token at character 2
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "HEAD /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:42:45 [error] 11638#0: *25 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected value but found T_COMMA at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:43:02 [error] 11638#0: *26 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected comma or object end but found T_COLON at character 16
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:43:03 [error] 11638#0: *27 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected comma or object end but found T_COLON at character 16
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:43:10 [error] 11638#0: *28 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected value but found invalid token at character 8
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:43:17 [error] 11638#0: *29 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected value but found invalid token at character 8
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:43:24 [error] 11638#0: *30 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected value but found invalid token at character 7
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:43:32 [error] 11638#0: *31 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected value but found invalid token at character 7
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
+2017/01/18 11:43:54 [error] 11638#0: *34 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/json_parse.lua:39: Expected the end but found T_COMMA at character 10
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/lua/json_parse.lua:39: in function </usr/local/openresty/nginx/lua/json_parse.lua:1>, client: 127.0.0.1, server: , request: "GET /json_parse HTTP/1.1", host: "127.0.0.1:8080"
